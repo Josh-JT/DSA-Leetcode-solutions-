@@ -12,3 +12,9 @@ def printParent(node, parent):
     if node is None:
         print( str(node.data) + " -> NULL")
     else print(str(node.data) + str(parent.data))
+
+    for child in node.children:
+        print(child, node)
+
+def printChildren(node):
+    
